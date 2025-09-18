@@ -1,0 +1,162 @@
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--side-panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    width: 420px;
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid var(--border-color-subtle);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    color: var(--text-color-bright);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0.01em;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: var(--text-color-light);
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+    margin: -4px;
+    transition: color 0.15s ease;
+}
+
+.modal-close:hover {
+    color: var(--text-color-bright);
+}
+
+.modal-body {
+    padding: 20px 24px;
+}
+
+.modal-section {
+    margin-bottom: 20px;
+}
+
+.modal-section:last-child {
+    margin-bottom: 0;
+}
+
+.modal-label {
+    display: block;
+    color: var(--text-color);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.modal-input,
+.modal-select {
+    width: 100%;
+    background-color: var(--button-subtle);
+    color: var(--text-color);
+    border: 1px solid var(--button-subtle-border);
+    padding: 10px 12px;
+    border-radius: 2px;
+    font-size: 13px;
+    font-family: inherit;
+    transition: all 0.15s ease;
+    outline: none;
+}
+
+.modal-input:focus,
+.modal-select:focus {
+    border-color: var(--focus-color);
+    box-shadow: 0 0 0 2px var(--focus-shadow);
+}
+
+.modal-input[type="number"] {
+    text-align: center;
+    width: 120px;
+}
+
+.modal-hint {
+    display: block;
+    color: var(--text-color-subtle);
+    font-size: 10px;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.modal-footer {
+    padding: 16px 24px 20px;
+    border-top: 1px solid var(--border-color-subtle);
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.modal-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    transition: all 0.15s ease;
+    outline: none;
+    min-width: 100px;
+}
+
+.modal-btn-secondary {
+    background-color: var(--button-subtle);
+    color: var(--text-color);
+    border: 1px solid var(--button-subtle-border);
+}
+
+.modal-btn-secondary:hover {
+    background-color: var(--button-subtle-hover);
+}
+
+.modal-btn-primary {
+    background-color: var(--export-primary);
+    color: var(--text-color-bright);
+    border: 1px solid #444;
+    font-weight: 500;
+}
+
+.modal-btn-primary:hover {
+    background-color: var(--export-hover);
+    border-color: #555;
+}
+
+.modal-btn-primary:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+    opacity: 0.5;
+    border-color: #555;
+}

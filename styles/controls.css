@@ -1,0 +1,169 @@
+/* Panel Header */
+.panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding: 16px 0 12px;
+    border-bottom: 1px solid var(--border-color-subtle);
+}
+
+.panel-header h3 {
+    margin: 0;
+    color: var(--text-color-bright);
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+/* Controls Section */
+.controls-section {
+    margin-bottom: 32px;
+}
+
+.controls-section h4 {
+    margin-bottom: 16px;
+    color: var(--text-color-bright);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* Section Dividers */
+.section-with-divider:not(:first-child) {
+    border-top: 1px solid var(--border-color-subtle);
+    padding-top: 32px;
+    margin-top: 0;
+}
+
+.section-with-divider:first-child {
+    margin-top: 0;
+}
+
+/* Form Controls */
+.frame-control-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 12px;
+    width: 100%;
+    max-width: var(--panel-content-width);
+    box-sizing: border-box;
+}
+
+.frame-control-row label {
+    min-width: 60px;
+    color: var(--text-color);
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-right: 8px;
+}
+
+.frame-control-row span {
+    color: var(--text-color-light);
+    font-size: 12px;
+    margin-left: 8px;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+/* Size inputs styling */
+.size-inputs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.size-inputs input {
+    flex: 1;
+    min-width: 70px;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 6px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.size-inputs input:focus {
+    outline: none;
+    border-color: var(--focus-color);
+    box-shadow: 0 0 0 2px var(--focus-shadow);
+}
+
+/* Select styling */
+select {
+    width: 100%;
+    padding: 6px 8px;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 2px;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--focus-color);
+    box-shadow: 0 0 0 2px var(--focus-shadow);
+}
+
+/* Range slider styling */
+input[type="range"] {
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--border-color);
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 8px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--text-color-light);
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--text-color-light);
+    cursor: pointer;
+    border: none;
+}
+
+/* Color picker */
+.color-picker {
+    width: 60px;
+    height: 32px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 8px;
+}
+
+.color-picker:hover {
+    border-color: var(--text-color-light);
+}
+
+.color-picker:focus {
+    outline: none;
+    border-color: var(--focus-color);
+    box-shadow: 0 0 0 2px var(--focus-shadow);
+}

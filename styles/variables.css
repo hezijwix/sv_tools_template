@@ -1,0 +1,47 @@
+/* CSS Custom Properties - Design System */
+:root {
+    /* Frame Dimensions - Adjustable size */
+    --frame-width: 800px;
+    --frame-height: 600px;
+
+    /* Dark Mode Color Palette */
+    --border-width: 1px;
+    --border-color: #2a2a2a;
+    --border-color-subtle: #1f1f1f;
+    --text-color: #e5e5e5;
+    --text-color-light: #888;
+    --text-color-subtle: #555;
+    --text-color-bright: #fff;
+
+    /* Side Panel Styling */
+    --side-panel-width: 280px;
+    --side-panel-bg: #0f0f0f;
+    --side-panel-text: #e5e5e5;
+    --side-panel-border: #2a2a2a;
+
+    /* Button System */
+    --button-primary: #1a1a1a;
+    --button-primary-text: #e5e5e5;
+    --button-hover: #222;
+    --button-subtle: #1a1a1a;
+    --button-subtle-hover: #222;
+    --button-subtle-text: #e5e5e5;
+    --button-subtle-border: #2a2a2a;
+
+    /* Export Buttons */
+    --export-primary: #333333;
+    --export-hover: #444444;
+
+    /* Focus States */
+    --focus-color: #666666;
+    --focus-shadow: rgba(102, 102, 102, 0.15);
+
+    /* Background Colors */
+    --bg-primary: #121212;
+    --bg-secondary: #181818;
+    --bg-tertiary: #1f1f1f;
+
+    /* Panel Constraints */
+    --panel-content-width: calc(var(--side-panel-width) - 40px);
+    --panel-margin: 20px;
+}

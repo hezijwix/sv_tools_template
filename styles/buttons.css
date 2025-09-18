@@ -1,0 +1,100 @@
+/* Preset buttons */
+.preset-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.preset-btn {
+    padding: 6px 8px;
+    background-color: var(--button-primary);
+    color: var(--button-primary-text);
+    border: 1px solid var(--button-subtle-border);
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-align: center;
+    transition: all 0.1s ease;
+}
+
+.preset-btn:hover {
+    background-color: var(--button-hover);
+}
+
+.preset-btn.active {
+    background-color: var(--export-primary);
+    color: var(--text-color-bright);
+}
+
+/* Control buttons */
+.control-btn {
+    background-color: var(--button-primary);
+    color: var(--button-primary-text);
+    border: 1px solid var(--button-subtle-border);
+    padding: 8px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-align: center;
+    transition: all 0.1s ease;
+    width: 100%;
+}
+
+.control-btn:hover {
+    background-color: var(--button-hover);
+}
+
+.control-btn.active {
+    background-color: var(--export-primary);
+    color: var(--text-color-bright);
+}
+
+/* Animation controls */
+.animation-controls {
+    display: flex;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.animation-controls .control-btn {
+    flex: 1;
+    padding: 6px 8px;
+}
+
+/* Image Upload Button Styles */
+.image-upload-btn {
+    position: relative;
+}
+
+.image-upload-btn.has-image {
+    background-color: var(--export-primary);
+}
+
+.remove-image {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    color: var(--text-color-light);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.7);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: all 0.15s ease;
+}
+
+.remove-image:hover {
+    background: rgba(255, 0, 0, 0.7);
+    color: white;
+}
